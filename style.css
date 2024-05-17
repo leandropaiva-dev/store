@@ -1,0 +1,101 @@
+/*estilizações gerais*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*colocar a font family escolhida conforme html/google*/
+}
+
+body{
+    height: 100vh;
+}
+
+.first{
+    height: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*estilizações do header*/
+
+header{
+    padding: 20px 5%;
+    background-color: black;
+}
+
+header > .first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+
+header a{
+    display: inline-block;
+      /*estilização dos links dessa tag (cor, text decor e pa)*/
+    transition: all 0.5s;
+}
+
+
+header a:hover{
+    /*color: ????;*/
+    transform: scale(1.15)
+
+}
+
+#logo1{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: auto;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .botao button{
+    padding: 10px 30px;
+    /*font-weight: 700px;
+    font-size: 15px;*/
+    background-color: rgb(255, 123, 0);
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+header .botao button:hover{
+    transform: scale(1.15);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.faixa{
+    margin-top: 0;
+    display: flex;
+    background-color: rgb(255, 123, 0);
+    height: 120px;
+}
+
+#bgsec1{
+    height: auto;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.sessao1 {
+    height: 500px;
+    background-color: black;
+}
+
+.faixa{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
