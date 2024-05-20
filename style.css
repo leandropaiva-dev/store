@@ -1,9 +1,16 @@
+/*fontes iniciais passivo de mudança perante discução entre colaboradores*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /*estilizações gerais*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
     /*colocar a font family escolhida conforme html/google*/
 }
 
@@ -30,18 +37,12 @@ header > .first{
     justify-content: space-between
 }
 
-
-header a{
+header a {
     display: inline-block;
-      /*estilização dos links dessa tag (cor, text decor e pa)*/
+    color: white; /* ou qualquer cor que você desejar */
+    text-decoration: none;
     transition: all 0.5s;
-}
-
-
-header a:hover{
-    /*color: ????;*/
-    transform: scale(1.15)
-
+    font-family:'Poppins', sans-serif;
 }
 
 #logo1{
@@ -51,13 +52,46 @@ header a:hover{
     height: auto;
 }
 
-header nav ul{
-    list-style-type: none;
-}
-
 header nav ul li{
     display: inline-block;
     padding: 0 40px;
+    
+}
+
+.search-container{
+   position: relative;
+}
+
+#search-button{
+background-color: rgba(255, 123, 0, 0.763);
+color: #ccc;
+border: none;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+#search-input{
+    width:0px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition:all 0.4s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#search-input.active {
+    width: 200px;
+    opacity: 1;
+    pointer-events: auto;
+    margin-left: 45px;
+    border-color: #fdfdfd;
+    outline: none;
 }
 
 header .botao button{
@@ -99,3 +133,4 @@ header .botao button:hover{
     display: flex;
     justify-content: space-between;
 }
+
