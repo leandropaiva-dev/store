@@ -39,7 +39,7 @@ header > .first{
 
 header a {
     display: inline-block;
-    color: rgb(166, 166, 166);
+    color: rgb(151, 151, 151);
     /* ou qualquer cor que você desejar */
     text-decoration: none;
     transition: all 0.5s;
@@ -59,9 +59,9 @@ header nav ul li{
     transition: all 0.5s;
 }
 
-header nav ul li:hover{
+header nav ul li a:hover{
     color: white;
-    transform: scale(1.15);
+    transform: scale(1.08);
 }
 
 header a:hover{
@@ -105,19 +105,24 @@ cursor: pointer;
 }
 
 header .botao button{
-    padding: 10px 30px;
+    padding: 5px 30px;
     /*font-weight: 700px;
     font-size: 15px;*/
-    background-color: rgb(255, 123, 0);
-    border: 0;
-    border-radius: 25px;
+   /* background-color: rgb(255, 123, 0);*/
+   background-color: transparent;
+   color: white;
+    border: 0.5px solid white;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.5s;
 }
 
 header .botao button:hover{
-    transform: scale(1.15);
+    transform: scale(1.10);
     box-shadow: 0px 0px 10px rgba(255, 123, 0, 0.438);
+    background-color: rgb(255, 123, 0);
+    border: 0;
+    border-radius: 25px;
 }
 
 .faixa{
@@ -128,6 +133,7 @@ header .botao button:hover{
 }
 
 .brands{
+    display: flex;
     width: 100vw;
     margin: 0 auto;
     overflow: hidden;
@@ -195,30 +201,113 @@ header .botao button:hover{
     text-decoration: none;
     display: flex;
     justify-content: center;
-    font-size: xx-large;
-}
-
-.sec0 a button{
-    background-color: rgb(255, 123, 0);
-    width: ;
 }
 
 .sec0 a button{
     font-size: 15px;
-    padding: 25px 50px;
-    background-color: rgb(255, 123, 0);
-    border: 0;
-    border-radius: 25px;
+    padding: 12px 50px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.5s ;
+    font-size: larger;
 }
 
 .sec0 a button:hover{
-    transform: scale(1.15);
+    transform: scale(1.08);
     box-shadow: 0px 0px 10px rgba(255, 123, 0, 0.438);
+    background-color: rgb(255, 123, 0);
+    color: white;
+    border: 0;
+    border-radius: 25px;
 }
 
 .sec2 {
+    display: flex;
+    justify-content: center;
     height: 900px;
-    background-color: rgb(235, 75, 0);
+    background-color: rgb(235, 137, 0);
+}
+
+/*
+.imgs{
+    max-height: 600px;
+    max-width: 600px;
+    margin: 150px 150px 150px 150px;
+    border: 10px solid black;
+    display: inline-flex;
+    max-width: 50%;  
+    border-top-left-radius: 50px;  
+    border-bottom-right-radius: 50px;   
+}
+
+.imgs ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.list1 img{
+    padding: 50px;
+    width: 300px;
+}
+
+.list2 img{
+    padding: 50px;
+    width: 300px;
+}
+*/
+
+.sec3{
+    height: 900px;
+    background-color: black;
+}
+
+/*.texts{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+}
+.texts ul li{
+    margin: auto 50px auto 0px;
+    padding: 25px;
+    list-style: none;
+    text-align: end;
+}*/
+
+.cards {
+    padding: 40px 4%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    outline: none;
+}
+
+.card1 {
+    background-image: url(./assets/cardteste.png);
+    width: 400px;
+    height: 500px;
+    box-shadow: rgba(88, 88, 88, 0.185) 0px 8px 24px;
+    outline: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card1:hover{
+    background-color: black;
+    background-image: none;
+    transition: 0.5s;
+    transform: scale(1.05);
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+
+.cards h1{
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    margin-top: 55%;
+    text-align: center;
 }
