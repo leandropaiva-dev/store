@@ -28,7 +28,7 @@ body{
 
 header{
     padding: 20px 5%;
-    background-color: black;
+    background-color: rgb(22, 22, 22);
 }
 
 header > .first{
@@ -111,26 +111,72 @@ header .botao button:hover{
 }
 
 .faixa{
-    margin-top: 0;
+    margin: 0;
     display: flex;
     background-color: rgb(255, 123, 0);
     height: 120px;
 }
 
-#bgsec1{
-    height: auto;
-    width: 100%;
-    margin-bottom: 0;
+.brands{
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
 }
+
+.brands ul { 
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    animation: slide 25s linear infinite;
+    list-style: none;
+    padding: 0;
+}
+
+
+
+@keyframes slide {
+    0%{
+        transform: translatex(0);
+    }
+    100%{
+        transform: translateX(-80%);
+    }
+}
+
+.brands img{
+    width: 150px;
+    filter: grayscale(90%);
+}
+
+.section0 {
+    height: 740px;
+    background-image: url(./option1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
 
 .sessao1 {
     height: 500px;
     background-color: black;
 }
 
-.faixa{
-    padding: 0;
+.typing{
+    text-align: center;
+    padding: 15% 5%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
 }
 
+.typing h1{
+    color: white;
+    font-size: 50px;
+}
+
+.typing h3{
+    color: rgb(201, 201, 201);
+    font-size: 18px;
+}
