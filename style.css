@@ -28,7 +28,7 @@ body{
 
 header{
     padding: 20px 5%;
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(0, 0, 0);
 }
 
 header > .first{
@@ -39,7 +39,8 @@ header > .first{
 
 header a {
     display: inline-block;
-    color: white; /* ou qualquer cor que você desejar */
+    color: rgb(166, 166, 166);
+    /* ou qualquer cor que você desejar */
     text-decoration: none;
     transition: all 0.5s;
     font-family:'Poppins', sans-serif;
@@ -55,7 +56,16 @@ header a {
 header nav ul li{
     display: inline-block;
     padding: 0 40px;
-    
+    transition: all 0.5s;
+}
+
+header nav ul li:hover{
+    color: white;
+    transform: scale(1.15);
+}
+
+header a:hover{
+    color: white;
 }
 
 .search-container{
@@ -107,7 +117,7 @@ header .botao button{
 
 header .botao button:hover{
     transform: scale(1.15);
-    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(255, 123, 0, 0.438);
 }
 
 .faixa{
@@ -149,34 +159,66 @@ header .botao button:hover{
     filter: grayscale(90%);
 }
 
-.section0 {
+.sec0 {
     height: 740px;
-    background-image: url(./option1.jpg);
+    background-image: url(./assets/bg1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 } 
 
-.sessao1 {
-    height: 500px;
+.sec1 {
+    height: 900px;
     background-color: black;
 }
 
 .typing{
     text-align: center;
-    padding: 15% 5%;
+    padding: 15% 5% 70px 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 60%;
+    max-width: 100%;
 }
 
 .typing h1{
     color: white;
-    font-size: 50px;
+    font-size: 72px;
 }
 
 .typing h3{
-    color: rgb(201, 201, 201);
-    font-size: 18px;
+    color: rgb(108, 108, 108);
+    font-size: 32px;
+}
+
+.sec0 a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.sec0 a button{
+    background-color: rgb(255, 123, 0);
+    width: ;
+}
+
+.sec0 a button{
+    font-size: 15px;
+    padding: 25px 50px;
+    background-color: rgb(255, 123, 0);
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.sec0 a button:hover{
+    transform: scale(1.15);
+    box-shadow: 0px 0px 10px rgba(255, 123, 0, 0.438);
+}
+
+.sec2 {
+    height: 900px;
+    background-color: rgb(235, 75, 0);
 }
