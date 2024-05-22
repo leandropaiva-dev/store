@@ -172,11 +172,6 @@ header .botao button:hover{
     background-repeat: no-repeat;
 } 
 
-.sec1 {
-    height: 900px;
-    background-color: black;
-}
-
 .typing{
     text-align: center;
     padding: 15% 5% 70px 5%;
@@ -222,6 +217,75 @@ header .botao button:hover{
     color: white;
     border: 0;
     border-radius: 25px;
+}
+
+.sec1-container {
+    height: 900px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 150px 20px;
+    gap: 30px;
+}
+/*imagem na vertical*/
+.imgsec1-1{
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 13px;
+}
+/*div da segunda imagem*/
+.imgsec-cont2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.imgsec-cont2 h2{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 12px;
+}
+
+.imgsec-cont2 p {
+    color: #cccccc73;
+    font-size: -1rem;
+    margin-bottom: 10px;
+}
+
+.buttonsec-2 {
+    padding: 12px 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(255, 123, 0);
+    color: white;
+    text-decoration: none; 
+    transition: all 0.8s;
+}
+
+.buttonsec-2:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.735);
+}
+
+
+.buttonsec-2 a {
+    color: white;
+    text-decoration: none;
+}
+/*imagem na horizontal*/
+.imgsec-22 {
+    padding-top: 10px;
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.imgsec-22:hover + .text-hover {
+    opacity: 1;
 }
 
 .sec2 {
