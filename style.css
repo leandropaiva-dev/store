@@ -132,6 +132,8 @@ header .botao button:hover{
     height: 120px;
 }
 
+
+
 .brands{
     display: flex;
     width: 100vw;
@@ -143,7 +145,7 @@ header .botao button:hover{
 .brands ul { 
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 85px;
     animation: slide 25s linear infinite;
     list-style: none;
     padding: 0;
@@ -156,7 +158,7 @@ header .botao button:hover{
         transform: translatex(0);
     }
     100%{
-        transform: translateX(-80%);
+        transform: translateX(-100%);
     }
 }
 
@@ -164,6 +166,7 @@ header .botao button:hover{
     width: 150px;
     filter: grayscale(90%);
 }
+
 
 .sec0 {
     height: 740px;
