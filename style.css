@@ -292,7 +292,9 @@ header .botao button:hover{
     display: flex;
     justify-content: center;
     height: 900px;
-    background-color: rgb(235, 137, 0);
+    background-color: rgb(0, 0, 0);
+    border-top: 5px solid rgb(255, 123, 0);
+    border-bottom: 5px solid rgb(255, 123, 0);
 }
 
 /*
@@ -343,25 +345,39 @@ header .botao button:hover{
 }*/
 
 .cards {
-    padding: 40px 4%;
+    padding: 80px 4%;
     display: flex;
     gap: 50px;
     justify-content: center;
     outline: none;
+    text-decoration: none;
 }
 
 .card1 {
-    background-image: url(./assets/cardteste.png);
+    background-color: rgb(0, 0, 0);
     width: 400px;
     height: 500px;
-    box-shadow: rgba(88, 88, 88, 0.185) 0px 8px 24px;
+    box-shadow: rgba(162, 162, 162, 0.185) 0px 8px 24px;
     outline: none;
     transition: all 0.5s;
     cursor: pointer;
+    border-radius: 15px;
+    position: relative;
 }
 
-.card1:hover{
-    background-color: black;
+.card1 a{
+    text-decoration: none;
+}
+
+#c1:hover{
+    background-image: none;
+    transition: 0.5s;
+    transform: scale(1.07);
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+
+#c2:hover{
     background-image: none;
     transition: 0.5s;
     transform: scale(1.05);
@@ -369,9 +385,41 @@ header .botao button:hover{
     color: rgb(255, 255, 255);
 }
 
-.cards h1{
+#c3:hover{
+    background-image: none;
+    transition: 0.5s;
+    transform: scale(1.07);
+    outline: none;
     color: rgb(255, 255, 255);
-    list-style-type: none;
-    margin-top: 55%;
+}
+
+.tit1 {
+    font-size: 22px;
+    margin: 50px auto;
+    padding: 0 40px;
+    opacity: 0;
+    color: rgb(255, 255, 255);
     text-align: center;
+}
+
+.card1:hover .tit1{
+    opacity: 1;
+}
+
+#c1{
+    background-image: url(./assets/imgc1.jpg);
+    background-color: rgb(255, 123, 0);
+    transition: all 0.5s;
+}
+
+#c2{
+    background-image: url(./assets/imgc2.jpg);
+    background-color: rgb(255, 123, 0);
+    transition: 0.5s all;
+}
+
+#c3{
+    background-image: url(./assets/imgc3.jpg);
+    background-color: rgb(255, 123, 0);
+    transition: all 0.5s;
 }
