@@ -441,23 +441,48 @@ header .botao button:hover{
 /*section 3 feedbeck-clientes-parceiros*/
 .sec3{
     height: 900px;
-    padding: 50px 4%;
-    display: flex;
     color: aliceblue;
+    padding-top: 250px;
 }
 
 .container-1{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: -60px;
+}
+
+.text-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.Text-card {
     
 }
 
 .container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-top: 20px;
+    margin-top: 150px;
+}
+
+.feedback1{
+    flex-direction: row;
+}
+
+.text-rigthimg{
+    display: flex;
 }
 
 .img-section3{
-    width: 250px;
+    width: 100px;
     height: auto;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 80px;
 }
 
 .rodape{
