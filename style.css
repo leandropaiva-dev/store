@@ -193,7 +193,7 @@ header .botao button:hover{
 
 .typing h3{
     color: rgb(108, 108, 108);
-    font-size: 32px;
+    font-size: 25px;
 }
 
 .sec0 a{
@@ -230,66 +230,63 @@ header .botao button:hover{
     justify-content: center;
     align-items: flex-start;
     padding: 150px 20px;
-    gap: 30px;
+    gap: 150px;
 }
-/*imagem na vertical*/
-.imgsec1-1{
-    max-width: 100%;
+
+/*img da esquerda*/
+.imgvert{
+    width: auto;
+    height: 40rem;
+    max-height: 500vh;
     border-radius: 20px;
-    margin-top: 13px;
 }
-/*div da segunda imagem*/
-.imgsec-cont2{
+
+/*div da direita text and button*/
+.mainright{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 150px;
     gap: 20px;
 }
 
-.imgsec-cont2 h2{
+.mainright h2{
     font-size: 2.5rem;
     color: #fff;
     margin-top: 12px;
 }
 
-.imgsec-cont2 p {
+.mainright p {
     color: #cccccc73;
     font-size: -1rem;
     margin-bottom: 10px;
 }
 
-.buttonsec-2 {
+/*configs botão da direita*/
+.buttonmain {
     padding: 12px 50px;
     font-size: 1rem;
     cursor: pointer;
-    border: 0;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
-    background-color: rgb(255, 123, 0);
+    background-color: transparent;
     color: white;
     text-decoration: none; 
     transition: all 0.8s;
 }
 
-.buttonsec-2:hover{
-    transform: scale(1.1);
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.735);
-}
-
-
-.buttonsec-2 a {
+.buttonmain a {
     color: white;
     text-decoration: none;
 }
-/*imagem na horizontal*/
-.imgsec-22 {
-    padding-top: 10px;
-    width: 500px;
-    height: auto;
-    border-radius: 20px;
-}
 
-.imgsec-22:hover + .text-hover {
-    opacity: 1;
+.buttonmain:hover{
+    transform: scale(1.08);
+    box-shadow: 0px 0px 10px rgba(255, 123, 0, 0.438);
+    background-color: rgb(255, 123, 0);
+    color: white;
+    border: 0;
+    border-radius: 25px;
 }
 
 .sec2 {
@@ -439,6 +436,28 @@ header .botao button:hover{
 
 #psec2 h1{
     font-size: 35px;
+}
+
+/*section 3 feedbeck-clientes-parceiros*/
+.sec3{
+    height: 900px;
+    padding: 50px 4%;
+    display: flex;
+    color: aliceblue;
+}
+
+.container-1{
+    
+}
+
+.container-2{
+}
+
+.img-section3{
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
 }
 
 .rodape{
