@@ -368,7 +368,30 @@ header .botao button:hover{
 }
 
 .card1 a{
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#c1{
+    background-image: url(./assets/imgc1.jpg);
+    background-color: rgb(255, 123, 0);
+    transition: all 0.5s;
+}
+
+#c2{
+    background-image: url(./assets/imgc2.jpg);
+    background-color: rgb(255, 123, 0);
+    transition: all 0.5s;
+}
+
+#c3{
+    background-image: url(./assets/imgc3.jpg);
+    background-color: rgb(255, 123, 0);
+    transition: all 0.5s;
 }
 
 #c1:hover{
@@ -408,23 +431,6 @@ header .botao button:hover{
     opacity: 1;
 }
 
-#c1{
-    background-image: url(./assets/imgc1.jpg);
-    background-color: rgb(255, 123, 0);
-    transition: all 0.5s;
-}
-
-#c2{
-    background-image: url(./assets/imgc2.jpg);
-    background-color: rgb(255, 123, 0);
-    transition: 0.5s all;
-}
-
-#c3{
-    background-image: url(./assets/imgc3.jpg);
-    background-color: rgb(255, 123, 0);
-    transition: all 0.5s;
-}
 
 #psec2{
     padding: 0px 50px;
