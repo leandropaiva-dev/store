@@ -1,7 +1,7 @@
-function criarElementoFooter() {
+function criarElementoFooter() 
     let body = document.querySelector("body");
 //Corrigir problema do link das imagens
-    body.insertAdjacentHTML('beforeend', `
+    body.insertAdjacentHTML'beforeend', `
         <footer>
             <div class="rodape">
                 <div class="logorodape">
@@ -12,15 +12,15 @@ function criarElementoFooter() {
 
                 <div class="navega">
                     <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Equipe</a></li>
+                        <li><a href="/store/html/index.html">Início</a></li>
+                        <li><a href="/store/html/indexservicos.html">Serviços</a></li>
+                        <li><a href="/store/html/indexequipe.html">Equipe</a></li>
                     </ul>
 
                     <ul>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Ajuda</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="/store/html/indexsobre.html">Sobre</a></li>
+                        <li><a href="/store/html/indexajuda.html">Ajuda</a></li>
+                        <li><a href="/store/html/indexcontato.html">Contato</a></li>
                     </ul>
                 </div>
 
@@ -33,8 +33,8 @@ function criarElementoFooter() {
 
             <div class="crafted"></div>
         </footer>
-    `);
-}
+    `;
+
 
 addEventListener("load", () => {
     criarElementoFooter()

@@ -12,17 +12,17 @@ function criarElementoNavBar() {
         </div>
         <nav class="menupc">
             <ul>
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="../html/indexservicos.html">Serviços</a></li>
-                <li><a href="../html/indexequipe.html">Equipe</a></li>
-                <li><a href="../html/indexsobre.html">Sobre</a></li>
-                <li><a href="../html/indexajuda.html">Ajuda</a></li>
-                <li><a href="../html/indexcontato.html">Contato</a></li>
+                <li><a href="/store/html/index.html">Início</a></li>
+                <li><a href="/store/html/indexservicos.html">Serviços</a></li>
+                <li><a href="/store/html/indexequipe.html">Equipe</a></li>
+                <li><a href="/store/html/indexsobre.html">Sobre</a></li>
+                <li><a href="/store/html/indexajuda.html">Ajuda</a></li>
+                <li><a href="/store/html/indexcontato.html">Contato</a></li>
             </ul>
         </nav>
 <div class="botao">
     <a href="#">
-        <button>FALE CONOSCO</button>
+        <button>FALE CONOSC</button>
     </a>
 </div>
     </div>
