@@ -445,50 +445,135 @@ header .botao button:hover{
 }
 
 /*section 3 feedbeck-clientes-parceiros*/
-.sec3{
-    height: 900px;
+.sec3 {
+    height: 1280px;
     color: aliceblue;
-    padding-top: 250px;
-}
-
-.container-1{
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin-top: -60px;
-}
-
-.text-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.Text-card {
-
-}
-
-.container-2{
-    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    padding-top: 20px;
-    margin-top: 150px;
+    flex-wrap: wrap;
+    padding-bottom: 400px;
 }
 
-.feedback1{
-    flex-direction: row;
+.containersec3 {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    padding-top: 70px;
+    margin-inline-start: 300px;
+    background-color: black;
+    gap:200px;
+
+}
+/*Texto acima dos cards*/
+.text-t1{
+    position: relative;  
+    margin-inline-start: 359px;
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: larger;
 }
 
-.text-rigthimg{
+.text-t1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#ffffff ;
+    opacity: 0.3;
+    border-radius: 30px;
+}
+
+.text-t1-content {
+    position: relative;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+/*Cards esquerda*/
+.feedback1 {
     display: flex;
+    align-items: center;
+    justify-content:baseline;
+    padding-top: 60px;
+    width: 100%; 
+    max-width: 370px;
+    height: 500px;
+    flex-direction: column;
+    background-color: #525252;
+    border-radius: 15px;
 }
 
-.img-section3{
-    width: 100px;
-    height: auto;+
-    object-fit: cover;
+.feedback2{
+    display: flex;
+    align-items: center;
+    justify-content:baseline;
+    padding-top: 60px;
+    width: 100%; 
+    max-width: 370px;
+    height: 500px;
+    flex-direction: column;
+    background-color: #525252;
+    border-radius: 15px;
+}
+
+.namecard{
+    color: white;
+    background-color: rgba(118, 141, 135, 0.721);
+}
+
+
+.textalt{
+    color: #ffffff;
+    margin-top: 25px; 
+    text-align:center
+}
+
+/*cards baixo*/
+.feedback3 {
+    display: flex;
+    align-items: center;
+    justify-content:baseline;
+    padding-top: 60px;
+    width: 100%;
+    max-width: 370px;
+    height: 400px;
+    flex-direction: column;
+    background-color:#525252;
+    border-radius: 15px;
+    padding-top: 15px;
+   
+}
+
+.feedback4 {
+    display: flex;
+    align-items: center;
+    justify-content:baseline;
+    padding-top: 60px;
+    width: 100%; 
+    max-width: 370px;
+    height: 400px;
+    padding-top: 15px;
+    flex-direction: column;
+    background-color: #525252;
+    border-radius: 15px;
+}
+
+.img-section3 {
+    width: 150px;
+    height: auto;
     border-radius: 80px;
+}
+
+.namecard {
+    margin-top: 20px; 
+    font-size: 18px; 
+    text-align: center; 
 }
 
 .rodape{
