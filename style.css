@@ -10,7 +10,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'roboto', sans-serif;
     /*colocar a font family escolhida conforme html/google*/
 }
 
@@ -69,42 +68,6 @@ header a:hover{
     color: white;
 }
 
-.search-container{
-   position: relative;
-}
-
-#search-button{
-background-color: rgba(255, 123, 0, 0.763);
-color: #ccc;
-border: none;
-padding: 10px;
-border-radius: 5px;
-cursor: pointer;
-}
-
-
-#search-input{
-    width:0px;
-    padding: 10px;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    transition:all 0.4s;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    pointer-events: none;
-}
-
-#search-input.active {
-    width: 200px;
-    opacity: 1;
-    pointer-events: auto;
-    margin-left: 45px;
-    border-color: #fdfdfd;
-    outline: none;
-}
-
 header .botao button{
     padding: 5px 30px;
     /*font-weight: 700px;
@@ -124,6 +87,27 @@ header .botao button:hover{
     background-color: rgb(255, 123, 0);
     border: 0;
     border-radius: 25px;
+}
+
+#backToTop{
+    display: none;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: rgb(201, 127, 58);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+   background-color: rgb(255, 123, 0);
 }
 
 .faixa{
@@ -230,14 +214,16 @@ header .botao button:hover{
     justify-content: center;
     align-items: flex-start;
     padding: 150px 20px;
-    gap: 150px;
+    gap: 80px;
 }
 
 /*img da esquerda*/
 .imgvert{
-    width: auto;
-    height: 40rem;
-    max-height: 500vh;
+    width: 600px;
+    height: 1000px;
+    max-height: 500px;
+    margin-top: 75px;
+    padding-left: 10px;
     border-radius: 20px;
 }
 
@@ -254,6 +240,7 @@ header .botao button:hover{
     font-size: 2.5rem;
     color: #fff;
     margin-top: 12px;
+    padding-right: 6px;
 }
 
 .mainright p {
